@@ -10,8 +10,7 @@ class RemoteService {
       var client = http.Client();
 
       var uri = Uri.parse(
-          'https://academy.ivalua.us/buyer/academy-amer/sandboxevol/72rjh/async.aspx/en/eai/api/supplier?format=xml&pagesize=10&pagenum=1&name=DELL');
-
+          'https://jsonplaceholder.typicode.com/posts'
       var response = await client.get(uri, headers: {
         "Accept": "application/json, text/plain, */*",
         "Access-Control-Allow-Origin": "*"
